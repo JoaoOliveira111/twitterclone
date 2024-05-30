@@ -187,10 +187,7 @@ import {
   getDownloadURL,
 } from "firebase/storage";
 
-// Import lightbox2 CSS and JS
-import "lightbox2/dist/css/lightbox.css";
-import "lightbox2/dist/js/lightbox.js";
-import "jquery";
+
 
 const tweet = ref("");
 const userProfileImage = ref("");

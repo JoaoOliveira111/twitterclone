@@ -13,6 +13,10 @@
 
 <script setup>
 import Sidebar from "./components/SidebarView.vue";
+// Import lightbox2 CSS and JS
+import "lightbox2/dist/css/lightbox.css";
+import "lightbox2/dist/js/lightbox.js";
+import "jquery";
 </script>
 
 <style>
@@ -25,11 +29,12 @@ import Sidebar from "./components/SidebarView.vue";
 }
 
 .router-view {
-  display:flex ;
-  flex: 1; /* Occupy remaining space */
-  overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  margin-left: 20px; /* Set margin to the desired space between sidebar and router view */
-  padding: 20px; /* Add padding for content */
+  position: relative;
+  flex: 0;
+  overflow-y: auto;
+  margin-left: 20vw;
+  padding: 20px;
+
 }
 
 /* Reset CSS */
