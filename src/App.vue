@@ -25,7 +25,7 @@ import "jquery";
 }
 
 .sidebar {
-  flex: 0 0 250px; /* Fixed width of sidebar */
+  flex: 0 0 250px; 
 }
 
 .router-view {
@@ -37,7 +37,7 @@ import "jquery";
 
 }
 
-/* Reset CSS */
+
 *,
 *::before,
 *::after {

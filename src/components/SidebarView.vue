@@ -1,13 +1,16 @@
 <template>
   <div class="sidebar">
     <div class="sidebar-header">
-      <h2>Twitter Clone</h2>
+      <img src="../assets/twitter.png" style="width: 50px; height: 50px;" />
     </div>
     <nav class="sidebar-nav">
       <router-link to="/home" class="sidebar-link" active-class="active-link">
+        <img src="../assets/home.png"  style="width: 30px; height: 30px;" />
         Home
       </router-link>
+      
       <router-link to="/messages" v-if="isAuthenticated" class="sidebar-link" active-class="active-link">
+        <img src="../assets/email.png"  style="width: 30px; height: 30px;" />
         Messages
       </router-link>
       <router-link
@@ -16,6 +19,7 @@
         class="sidebar-link"
         active-class="active-link"
       >
+      <img src="../assets/user.png"  style="width: 30px; height: 30px;" />
         Profile
       </router-link>
       <router-link

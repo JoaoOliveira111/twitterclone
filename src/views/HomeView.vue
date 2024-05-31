@@ -2,10 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <!-- Main Content -->
-        <!-- Tendências -->
         <div class="mb-4">
-          <h2>Tendências</h2>
+          <h2>Trends</h2>
           <ul class="list-group">
             <li class="list-group-item" v-for="trend in trends" :key="trend">
               {{ trend }}
@@ -63,10 +61,8 @@
         </div>
       </div>
       <div class="col-md-4">
-        <!-- Sidebar -->
-        <!-- Sugestões de Seguimento -->
         <div>
-          <h2>Quem seguir</h2>
+          <h2>Follow</h2>
           <h4 v-if="!auth.currentUser">
             Faça login para ver os utilizadores que pode seguir!
           </h4>
@@ -288,4 +284,12 @@ onMounted(async () => {
   color: #888;
   margin-top: 5px;
 }
+
+.trends-section h2 {
+  font-family: "Arial", sans-serif; 
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #1da1f2; 
+}
+
 </style>
